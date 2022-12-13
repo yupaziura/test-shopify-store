@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;500&display=swap');
+
+$base-color: #464B90;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:#F5F5F5;
+}
+
+
+.main_container {
+    margin: 80px 0;
+   h1{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 42px;
+    color: #656874;
+   }
+
+   .container_cards {
+    margin: 60px auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+
+    .card {
+        max-width: 520px;
+    }
+
+    .card-img{
+        width: 100%;
+    }
+
+    .info_container{
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        .title {
+            text-align: center;
+            font-family: 'Montserrat';
+            font-weight: 400;
+            font-size: 22px;
+        }
+
+        .info {
+            font-family: 'Roboto';
+            font-weight: 500;
+            font-size: 14px;
+            text-align: center;
+            color: #464B90;
+            line-height: 26px;
+
+            .once {
+                background: rgba($color: $base-color, $alpha: 0.1);
+                border-radius: 40px;
+                padding: 7px 23px;
+                
+            }
+            .percent {
+                color: #EB5757;
+                background: rgba($color: #EB5757, $alpha: 0.1);
+                border-radius: 40px;
+                padding: 7px 17px;                
+            }
+
+
+            .save{
+                padding: 11px 25px;
+                background: #FFFFFF;
+                box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.11);
+                border-radius: 40px;
+                z-index: 10;
+            }
+
+            .once_large{
+                padding: 7px 23px 7px 200px;
+                margin-left: -180px;
+                z-index: -10;
+                background: rgba($color: $base-color, $alpha: 0.1);
+                border-radius: 40px;
+                position: relative;
+                left: 0;
+            }
+            
+        }
+        
+        .button {
+            button {
+                padding: 18px 75px;
+
+                border: none;
+                border-radius: 40px;
+                background-color:$base-color;
+
+                font-family: 'Montserrat';
+                font-weight: 400;
+                font-size: 16px;
+                color: white;
+            }
+        }
+    }
+   }
+}
